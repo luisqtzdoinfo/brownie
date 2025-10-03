@@ -15,7 +15,7 @@ export default function PricingSection() {
       price: 'R$24.99',
       isPopular: true,
       description: 'Uma caixa com 6 brownies. Misture e combine seus favoritos!',
-      features: ['6 Brownies à sua escolha', 'Ótimo para compartilhar', '10% de Desconto'],
+      features: ['6 Brownies da maneira que desejar', 'Ótimo para compartilhar', '10% de Desconto'],
     },
     {
       title: 'Pacote de Eventos',
