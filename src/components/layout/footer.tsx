@@ -11,23 +11,23 @@ export default function Footer() {
             <span className="font-bold font-headline text-lg">Brownie Bliss Hub</span>
           </Link>
           <p className="text-sm text-muted-foreground">
-            Crafting the most blissful brownies you&apos;ve ever tasted.
+            Criando os brownies mais maravilhosos que você já provou.
           </p>
         </div>
         <div className="flex flex-col gap-2">
-          <h3 className="font-semibold">Quick Links</h3>
-          <Link href="#about" className="text-sm text-muted-foreground hover:text-foreground">About Us</Link>
-          <Link href="#recipes" className="text-sm text-muted-foreground hover:text-foreground">Recipes</Link>
-          <Link href="#pricing" className="text-sm text-muted-foreground hover:text-foreground">Pricing</Link>
-          <Link href="#contact" className="text-sm text-muted-foreground hover:text-foreground">Contact</Link>
+          <h3 className="font-semibold">Links Rápidos</h3>
+          <Link href="#about" className="text-sm text-muted-foreground hover:text-foreground">Sobre Nós</Link>
+          <Link href="#recipes" className="text-sm text-muted-foreground hover:text-foreground">Receitas</Link>
+          <Link href="#pricing" className="text-sm text-muted-foreground hover:text-foreground">Preços</Link>
+          <Link href="#contact" className="text-sm text-muted-foreground hover:text-foreground">Contato</Link>
         </div>
         <div className="flex flex-col gap-2">
           <h3 className="font-semibold">Legal</h3>
-          <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Terms of Service</Link>
-          <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Privacy Policy</Link>
+          <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Termos de Serviço</Link>
+          <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Política de Privacidade</Link>
         </div>
         <div className="flex flex-col gap-2">
-          <h3 className="font-semibold">Follow Us</h3>
+          <h3 className="font-semibold">Siga-nos</h3>
           <div className="flex gap-4">
             <Link href="#" aria-label="Twitter">
               <Twitter className="h-5 w-5 text-muted-foreground hover:text-foreground" />
@@ -43,7 +43,7 @@ export default function Footer() {
       </div>
       <div className="bg-muted/20">
         <div className="container py-4 text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Brownie Bliss Hub. All rights reserved.
+          © {new Date().getFullYear()} Brownie Bliss Hub. Todos os direitos reservados.
         </div>
       </div>
     </footer>

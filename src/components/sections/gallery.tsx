@@ -10,10 +10,10 @@ export default function GallerySection() {
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold font-headline tracking-tighter sm:text-4xl">
-              A Feast for Your Eyes
+              Um Banquete para Seus Olhos
             </h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Warning: the following images may cause extreme brownie cravings.
+              Aviso: as imagens a seguir podem causar desejos extremos de brownie.
             </p>
           </div>
         </div>

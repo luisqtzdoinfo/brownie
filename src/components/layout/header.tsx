@@ -7,11 +7,11 @@ import { Menu, Sprout } from 'lucide-react';
 import { useState } from 'react';
 
 const navLinks = [
-  { href: '#about', label: 'About' },
-  { href: '#recipes', label: 'Recipes' },
-  { href: '#testimonials', label: 'Testimonials' },
-  { href: '#pricing', label: 'Pricing' },
-  { href: '#contact', label: 'Contact' },
+  { href: '#about', label: 'Sobre' },
+  { href: '#recipes', label: 'Receitas' },
+  { href: '#testimonials', label: 'Depoimentos' },
+  { href: '#pricing', label: 'Preços' },
+  { href: '#contact', label: 'Contato' },
 ];
 
 export default function Header() {
@@ -39,13 +39,13 @@ export default function Header() {
         </nav>
         <div className="flex flex-1 items-center justify-end space-x-4">
           <Button asChild>
-            <Link href="#pricing">Order Now</Link>
+            <Link href="#pricing">Peça Agora</Link>
           </Button>
           <Sheet open={isSheetOpen} onOpenChange={setSheetOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="md:hidden">
                 <Menu className="h-5 w-5" />
-                <span className="sr-only">Toggle Menu</span>
+                <span className="sr-only">Abrir Menu</span>
               </Button>
             </SheetTrigger>
             <SheetContent side="left">

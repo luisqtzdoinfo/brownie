@@ -11,7 +11,7 @@ const contactSchema = z.object({
 export async function handleContactForm(values: z.infer<typeof contactSchema>) {
   const parsed = contactSchema.safeParse(values);
   if (!parsed.success) {
-    return { error: "Invalid data provided." };
+    return { error: "Dados inválidos fornecidos." };
   }
 
   // Here, you would typically save the data to Firestore.
@@ -24,15 +24,15 @@ export async function handleContactForm(values: z.infer<typeof contactSchema>) {
   //     ...parsed.data,
   //     submittedAt: new Date(),
   //   });
-  //   return { success: "Message sent successfully!" };
+  //   return { success: "Mensagem enviada com sucesso!" };
   // } catch (error) {
   //   console.error("Error writing to Firestore: ", error);
-  //   return { error: "Could not save message. Please try again later." };
+  //   return { error: "Não foi possível salvar a mensagem. Por favor, tente novamente mais tarde." };
   // }
 
   console.log("Contact form submitted:", parsed.data);
   // Simulating a successful submission without a database
-  return { success: "Message sent successfully!" };
+  return { success: "Mensagem enviada com sucesso!" };
 }
 
 const browniePreferencesSchema = z.object({
@@ -43,7 +43,7 @@ const browniePreferencesSchema = z.object({
 
 // This is a mock implementation of the AI recommendation feature.
 export async function getBrownieRecommendation(preferences: z.infer<typeof browniePreferencesSchema>) {
-  console.log("Getting AI recommendation for:", preferences);
+  console.log("Obtendo recomendação de IA para:", preferences);
 
   // Simulate AI processing time
   await new Promise(res => setTimeout(res, 1500));
@@ -51,26 +51,26 @@ export async function getBrownieRecommendation(preferences: z.infer<typeof brown
   // Mock logic based on preferences
   if (preferences.chocolateType === 'dark' && preferences.texture === 'fudgy') {
     return {
-      name: "The Midnight Fudge",
-      description: "An intensely rich dark chocolate brownie with a dense, fudgy core. Perfect for the ultimate chocolate purist."
+      name: "O Fudge da Meia-Noite",
+      description: "Um brownie de chocolate amargo intensamente rico com um centro denso e cremoso. Perfeito para o purista de chocolate."
     };
   }
   if (preferences.chocolateType === 'white' ) {
     return {
-      name: "The Blondie Dream",
-      description: "A chewy, buttery blondie packed with white chocolate chunks and a hint of vanilla. A delightful twist on the classic."
+      name: "O Sonho de Blondie",
+      description: "Um blondie amanteigado e com pedaços, recheado com pedaços de chocolate branco e um toque de baunilha. Uma deliciosa variação do clássico."
     };
   }
   if (preferences.texture === 'cakey') {
     return {
-        name: "The Classic Cake Brownie",
-        description: "A light, cake-like brownie with a delicate crumb and a rich chocolate flavor. Great with a scoop of ice cream."
+        name: "O Clássico Brownie Bolo",
+        description: "Um brownie leve, com textura de bolo, com uma massa delicada e um rico sabor de chocolate. Ótimo com uma bola de sorvete."
     };
   }
 
   // Default recommendation
   return {
-    name: "The Signature Bliss",
-    description: "Our all-around favorite! A perfectly balanced milk chocolate brownie that's both chewy and fudgy. A true crowd-pleaser."
+    name: "A Felicidade Assinatura",
+    description: "Nosso favorito de todos! Um brownie de chocolate ao leite perfeitamente equilibrado que é ao mesmo tempo cremoso e com pedaços. Um verdadeiro agrado para todos."
   };
 }

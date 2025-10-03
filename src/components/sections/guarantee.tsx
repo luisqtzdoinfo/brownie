@@ -5,18 +5,18 @@ export default function GuaranteeSection() {
   const guarantees = [
     {
       icon: <HeartHandshake className="h-8 w-8 text-primary" />,
-      title: '100% Bliss Guarantee',
-      description: 'If you\'re not absolutely in love with your brownies, we\'ll make it right. Your satisfaction is our top priority.',
+      title: 'Garantia de 100% de Felicidade',
+      description: 'Se você não se apaixonar absolutamente pelos seus brownies, nós resolveremos. Sua satisfação é nossa principal prioridade.',
     },
     {
       icon: <ShieldCheck className="h-8 w-8 text-primary" />,
-      title: 'Secure Payments',
-      description: 'Your payment information is safe with us. We use industry-standard encryption to protect your data.',
+      title: 'Pagamentos Seguros',
+      description: 'Suas informações de pagamento estão seguras conosco. Usamos criptografia padrão da indústria para proteger seus dados.',
     },
     {
       icon: <Gem className="h-8 w-8 text-primary" />,
-      title: 'Quality You Can Taste',
-      description: 'We stand by the quality of our ingredients and our baking process. Only the best for our customers.',
+      title: 'Qualidade que Você Pode Provar',
+      description: 'Nós garantimos a qualidade dos nossos ingredientes e nosso processo de cozimento. Apenas o melhor para nossos clientes.',
     },
   ];
 

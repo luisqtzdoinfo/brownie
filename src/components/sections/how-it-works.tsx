@@ -5,18 +5,18 @@ export default function HowItWorksSection() {
   const steps = [
     {
       icon: <ShoppingCart className="h-10 w-10 text-primary" />,
-      title: 'Choose Your Bliss',
-      description: 'Browse our selection of decadent brownies and pick your favorites. Add them to your cart and get ready for a treat.',
+      title: 'Escolha Sua Felicidade',
+      description: 'Navegue pela nossa seleção de brownies decadentes e escolha seus favoritos. Adicione ao carrinho e prepare-se para um deleite.',
     },
     {
       icon: <Package className="h-10 w-10 text-primary" />,
-      title: 'Secure Checkout',
-      description: 'Complete your order with our secure and easy-to-use checkout process. We\'ll get to baking right away.',
+      title: 'Checkout Seguro',
+      description: 'Conclua seu pedido com nosso processo de checkout seguro e fácil de usar. Começaremos a assar imediatamente.',
     },
     {
       icon: <Smile className="h-10 w-10 text-primary" />,
-      title: 'Enjoy & Share',
-      description: 'Your freshly baked brownies will arrive at your doorstep. Enjoy the bliss and share the love (or don\'t, we won\'t judge!).',
+      title: 'Aproveite e Compartilhe',
+      description: 'Seus brownies recém-assados chegarão à sua porta. Aproveite a felicidade e compartilhe o amor (ou não, não vamos julgar!).',
     },
   ];
 
@@ -26,13 +26,13 @@ export default function HowItWorksSection() {
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <div className="inline-block rounded-lg bg-primary text-primary-foreground px-3 py-1 text-sm font-medium">
-              Step-by-Step
+              Passo a Passo
             </div>
             <h2 className="text-3xl font-bold font-headline tracking-tighter sm:text-4xl">
-              From Our Oven to Your Door
+              Do Nosso Forno Para a Sua Porta
             </h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Getting your hands on our blissful brownies is as easy as 1-2-3. Here’s how our simple process works.
+              Conseguir nossos brownies maravilhosos é tão fácil quanto 1-2-3. Veja como nosso processo simples funciona.
             </p>
           </div>
         </div>

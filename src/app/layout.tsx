@@ -6,16 +6,16 @@ import Footer from '@/components/layout/footer';
 
 export const metadata: Metadata = {
   title: 'Brownie Bliss Hub',
-  description: 'The ultimate destination for brownie lovers.',
+  description: 'O destino definitivo para os amantes de brownie.',
   openGraph: {
     title: 'Brownie Bliss Hub',
-    description: 'The ultimate destination for brownie lovers.',
+    description: 'O destino definitivo para os amantes de brownie.',
     images: [
       {
         url: 'https://picsum.photos/seed/brownie-og/1200/630',
         width: 1200,
         height: 630,
-        alt: 'A delicious brownie',
+        alt: 'Um brownie delicioso',
       },
     ],
   },
@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="!scroll-smooth">
+    <html lang="pt-BR" className="!scroll-smooth">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

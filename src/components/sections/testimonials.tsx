@@ -8,21 +8,21 @@ export default function TestimonialsSection() {
   const testimonials = [
     {
       id: 1,
-      name: 'Jessica M.',
+      name: 'Jéssica M.',
       avatarId: 'testimonial-1',
-      quote: "These are hands down the best brownies I've ever had. So fudgy and rich! I'm officially addicted.",
+      quote: "Sem dúvida, estes são os melhores brownies que já comi. Tão cremosos e ricos! Estou oficialmente viciada.",
     },
     {
       id: 2,
       name: 'David L.',
       avatarId: 'testimonial-2',
-      quote: 'I ordered a box for my office and everyone was blown away. The quality is incredible. Will be ordering again!',
+      quote: 'Pedi uma caixa para o meu escritório e todos ficaram impressionados. A qualidade é incrível. Vou pedir de novo!',
     },
     {
       id: 3,
-      name: 'Sarah K.',
+      name: 'Sara K.',
       avatarId: 'testimonial-3',
-      quote: 'The perfect treat for any occasion. The delivery was fast and the brownies were so fresh. 10/10!',
+      quote: 'O doce perfeito para qualquer ocasião. A entrega foi rápida e os brownies estavam tão frescos. 10/10!',
     },
   ];
 
@@ -32,13 +32,13 @@ export default function TestimonialsSection() {
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-2">
             <div className="inline-block rounded-lg bg-primary text-primary-foreground px-3 py-1 text-sm font-medium">
-              Social Proof
+              Prova Social
             </div>
             <h2 className="text-3xl font-bold font-headline tracking-tighter sm:text-4xl">
-              What Our Customers Say
+              O que Nossos Clientes Dizem
             </h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
-              Don&apos;t just take our word for it. Here&apos;s what brownie lovers think about our creations.
+              Não acredite apenas na nossa palavra. Veja o que os amantes de brownie pensam sobre nossas criações.
             </p>
           </div>
         </div>

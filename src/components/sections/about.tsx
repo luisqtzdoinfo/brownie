@@ -11,34 +11,34 @@ export default function AboutSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-4">
             <div className="inline-block rounded-lg bg-primary text-primary-foreground px-3 py-1 text-sm font-medium">
-              Our Secret
+              Nosso Segredo
             </div>
             <h2 className="text-3xl font-bold font-headline tracking-tighter sm:text-4xl">
-              More Than Just a Brownie
+              Mais do que Apenas um Brownie
             </h2>
             <p className="text-muted-foreground md:text-lg/relaxed">
-              At Brownie Bliss Hub, we believe that a great brownie can make any day better. That&apos;s why we pour our hearts into every batch, using only premium ingredients to create an unforgettable taste experience.
+              No Brownie Bliss Hub, acreditamos que um ótimo brownie pode tornar qualquer dia melhor. É por isso que colocamos nossos corações em cada fornada, usando apenas ingredientes premium para criar uma experiência de sabor inesquecível.
             </p>
             <ul className="grid gap-4">
               <li className="flex items-start gap-4">
                 <CheckCircle className="mt-1 h-5 w-5 text-primary" />
                 <div>
-                  <h3 className="font-semibold">Premium Chocolate</h3>
-                  <p className="text-muted-foreground">We use high-quality Belgian chocolate for a deep, rich flavor.</p>
+                  <h3 className="font-semibold">Chocolate Premium</h3>
+                  <p className="text-muted-foreground">Usamos chocolate belga de alta qualidade para um sabor profundo e rico.</p>
                 </div>
               </li>
               <li className="flex items-start gap-4">
                 <CheckCircle className="mt-1 h-5 w-5 text-primary" />
                 <div>
-                  <h3 className="font-semibold">Farm-Fresh Ingredients</h3>
-                  <p className="text-muted-foreground">Organic butter, free-range eggs, and unbleached flour make all the difference.</p>
+                  <h3 className="font-semibold">Ingredientes Frescos da Fazenda</h3>
+                  <p className="text-muted-foreground">Manteiga orgânica, ovos de galinhas criadas soltas e farinha não branqueada fazem toda a diferença.</p>
                 </div>
               </li>
               <li className="flex items-start gap-4">
                 <CheckCircle className="mt-1 h-5 w-5 text-primary" />
                 <div>
-                  <h3 className="font-semibold">Baked with Love</h3>
-                  <p className="text-muted-foreground">Each brownie is handcrafted in small batches to ensure perfection.</p>
+                  <h3 className="font-semibold">Assado com Amor</h3>
+                  <p className="text-muted-foreground">Cada brownie é feito à mão em pequenos lotes para garantir a perfeição.</p>
                 </div>
               </li>
             </ul>

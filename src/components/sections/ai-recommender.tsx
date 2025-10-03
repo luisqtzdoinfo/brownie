@@ -19,13 +19,13 @@ import { Loader2, Wand2 } from 'lucide-react';
 
 const formSchema = z.object({
   chocolateType: z.enum(['dark', 'milk', 'white'], {
-    required_error: 'You need to select a chocolate type.',
+    required_error: 'Você precisa selecionar um tipo de chocolate.',
   }),
   texture: z.enum(['fudgy', 'chewy', 'cakey'], {
-    required_error: 'You need to select a texture preference.',
+    required_error: 'Você precisa selecionar uma preferência de textura.',
   }),
   occasion: z.enum(['party', 'gift', 'treat'], {
-    required_error: 'You need to select an occasion.',
+    required_error: 'Você precisa selecionar uma ocasião.',
   }),
 });
 
@@ -56,10 +56,10 @@ export default function AiRecommender() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-4">
             <h2 className="text-3xl font-bold font-headline tracking-tighter sm:text-4xl">
-              Find Your Perfect Brownie
+              Encontre o Seu Brownie Perfeito
             </h2>
             <p className="text-muted-foreground md:text-lg/relaxed">
-              Overwhelmed by all the delicious options? Let our AI-powered Brownie Bot help you find the perfect match for your taste.
+              Impressionado com todas as opções deliciosas? Deixe nosso Robô de Brownie com IA ajudá-lo a encontrar a combinação perfeita para o seu gosto.
             </p>
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
@@ -68,20 +68,20 @@ export default function AiRecommender() {
                   name="chocolateType"
                   render={({ field }) => (
                     <FormItem className="space-y-3">
-                      <FormLabel>Favorite Chocolate?</FormLabel>
+                      <FormLabel>Chocolate Favorito?</FormLabel>
                       <FormControl>
                         <RadioGroup onValueChange={field.onChange} defaultValue={field.value} className="flex flex-col space-y-1">
                           <FormItem className="flex items-center space-x-3 space-y-0">
                             <FormControl><RadioGroupItem value="dark" /></FormControl>
-                            <FormLabel className="font-normal">Deep & Dark</FormLabel>
+                            <FormLabel className="font-normal">Intenso e Amargo</FormLabel>
                           </FormItem>
                           <FormItem className="flex items-center space-x-3 space-y-0">
                             <FormControl><RadioGroupItem value="milk" /></FormControl>
-                            <FormLabel className="font-normal">Smooth Milk</FormLabel>
+                            <FormLabel className="font-normal">Suave ao Leite</FormLabel>
                           </FormItem>
                           <FormItem className="flex items-center space-x-3 space-y-0">
                             <FormControl><RadioGroupItem value="white" /></FormControl>
-                            <FormLabel className="font-normal">Creamy White</FormLabel>
+                            <FormLabel className="font-normal">Branco Cremoso</FormLabel>
                           </FormItem>
                         </RadioGroup>
                       </FormControl>
@@ -94,20 +94,20 @@ export default function AiRecommender() {
                   name="texture"
                   render={({ field }) => (
                     <FormItem className="space-y-3">
-                      <FormLabel>Ideal Texture?</FormLabel>
+                      <FormLabel>Textura Ideal?</FormLabel>
                       <FormControl>
                         <RadioGroup onValueChange={field.onChange} defaultValue={field.value} className="flex flex-col space-y-1">
                            <FormItem className="flex items-center space-x-3 space-y-0">
                             <FormControl><RadioGroupItem value="fudgy" /></FormControl>
-                            <FormLabel className="font-normal">Ultra Fudgy</FormLabel>
+                            <FormLabel className="font-normal">Super Cremoso</FormLabel>
                           </FormItem>
                           <FormItem className="flex items-center space-x-3 space-y-0">
                             <FormControl><RadioGroupItem value="chewy" /></FormControl>
-                            <FormLabel className="font-normal">Perfectly Chewy</FormLabel>
+                            <FormLabel className="font-normal">Com Pedaços</FormLabel>
                           </FormItem>
                           <FormItem className="flex items-center space-x-3 space-y-0">
                             <FormControl><RadioGroupItem value="cakey" /></FormControl>
-                            <FormLabel className="font-normal">Light & Cakey</FormLabel>
+                            <FormLabel className="font-normal">Leve como Bolo</FormLabel>
                           </FormItem>
                         </RadioGroup>
                       </FormControl>
@@ -118,7 +118,7 @@ export default function AiRecommender() {
                 
                 <Button type="submit" disabled={isLoading}>
                   {isLoading ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Wand2 className="mr-2 h-4 w-4" />}
-                  Find My Brownie
+                  Encontrar Meu Brownie
                 </Button>
               </form>
             </Form>
@@ -130,9 +130,9 @@ export default function AiRecommender() {
                 <CardHeader>
                   <CardTitle className="font-headline text-2xl flex items-center gap-2">
                     <Wand2 className="h-6 w-6 text-primary"/>
-                    Your Perfect Match!
+                    Sua Combinação Perfeita!
                   </CardTitle>
-                  <CardDescription>Our AI recommends...</CardDescription>
+                  <CardDescription>Nossa IA recomenda...</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-2">
                   <h3 className="text-xl font-bold font-headline">{recommendation.name}</h3>
@@ -144,7 +144,7 @@ export default function AiRecommender() {
                <Card className="w-full max-w-md bg-muted/50 border-dashed">
                 <CardContent className="flex flex-col items-center justify-center text-center p-12 space-y-4">
                   <Wand2 className="h-12 w-12 text-muted-foreground"/>
-                  <p className="text-muted-foreground">Your personalized brownie recommendation will appear here!</p>
+                  <p className="text-muted-foreground">Sua recomendação personalizada de brownie aparecerá aqui!</p>
                 </CardContent>
               </Card>
             )}

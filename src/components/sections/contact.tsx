@@ -12,9 +12,9 @@ import { Loader2 } from 'lucide-react';
 import { useState } from 'react';
 
 const formSchema = z.object({
-  name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
-  email: z.string().email({ message: 'Please enter a valid email address.' }),
-  message: z.string().min(10, { message: 'Message must be at least 10 characters.' }),
+  name: z.string().min(2, { message: 'O nome deve ter pelo menos 2 caracteres.' }),
+  email: z.string().email({ message: 'Por favor, insira um endereço de e-mail válido.' }),
+  message: z.string().min(10, { message: 'A mensagem deve ter pelo menos 10 caracteres.' }),
 });
 
 export default function ContactSection() {
@@ -37,15 +37,15 @@ export default function ContactSection() {
 
     if (result.success) {
       toast({
-        title: 'Message Sent!',
-        description: 'Thanks for reaching out. We\'ll get back to you soon.',
+        title: 'Mensagem Enviada!',
+        description: 'Obrigado por entrar em contato. Retornaremos em breve.',
       });
       form.reset();
     } else {
       toast({
         variant: 'destructive',
-        title: 'Uh oh! Something went wrong.',
-        description: result.error || 'There was a problem with your submission.',
+        title: 'Oh, não! Algo deu errado.',
+        description: result.error || 'Houve um problema com o seu envio.',
       });
     }
   }
@@ -56,10 +56,10 @@ export default function ContactSection() {
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="space-y-4">
             <h2 className="text-3xl font-bold font-headline tracking-tighter sm:text-4xl">
-              Get in Touch
+              Entre em Contato
             </h2>
             <p className="text-muted-foreground">
-              Have a question, a special request, or just want to talk brownies? We&apos;d love to hear from you!
+              Tem uma pergunta, um pedido especial ou apenas quer falar sobre brownies? Adoraríamos ouvir de você!
             </p>
           </div>
           <div className="space-y-4">
@@ -70,9 +70,9 @@ export default function ContactSection() {
                   name="name"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Name</FormLabel>
+                      <FormLabel>Nome</FormLabel>
                       <FormControl>
-                        <Input placeholder="Your Name" {...field} />
+                        <Input placeholder="Seu Nome" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -85,7 +85,7 @@ export default function ContactSection() {
                     <FormItem>
                       <FormLabel>Email</FormLabel>
                       <FormControl>
-                        <Input placeholder="your.email@example.com" {...field} />
+                        <Input placeholder="seu.email@exemplo.com" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -96,9 +96,9 @@ export default function ContactSection() {
                   name="message"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Message</FormLabel>
+                      <FormLabel>Mensagem</FormLabel>
                       <FormControl>
-                        <Textarea placeholder="Your message..." {...field} />
+                        <Textarea placeholder="Sua mensagem..." {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -106,7 +106,7 @@ export default function ContactSection() {
                 />
                 <Button type="submit" disabled={isLoading}>
                   {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-                  Send Message
+                  Enviar Mensagem
                 </Button>
               </form>
             </Form>

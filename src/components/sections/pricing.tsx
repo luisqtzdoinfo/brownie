@@ -5,23 +5,23 @@ import { Check } from 'lucide-react';
 export default function PricingSection() {
   const plans = [
     {
-      title: 'The Solo Bliss',
-      price: '$4.99',
-      description: 'A single, perfect brownie for a personal treat.',
-      features: ['1 Classic Fudge Brownie', 'Perfect for one'],
+      title: 'Felicidade Solo',
+      price: 'R$4.99',
+      description: 'Um único e perfeito brownie para um mimo pessoal.',
+      features: ['1 Brownie Clássico Cremoso', 'Perfeito para uma pessoa'],
     },
     {
-      title: 'Blissful Box',
-      price: '$24.99',
+      title: 'Caixa da Felicidade',
+      price: 'R$24.99',
       isPopular: true,
-      description: 'A box of 6 brownies. Mix and match your favorites!',
-      features: ['6 Brownies of Your Choice', 'Great for sharing', '10% Discount'],
+      description: 'Uma caixa com 6 brownies. Misture e combine seus favoritos!',
+      features: ['6 Brownies à sua escolha', 'Ótimo para compartilhar', '10% de Desconto'],
     },
     {
-      title: 'The Party Pack',
-      price: '$44.99',
-      description: 'A party-sized pack of 12 brownies for any celebration.',
-      features: ['12 Brownies of Your Choice', 'Best value', 'Perfect for events'],
+      title: 'Pacote de Festa',
+      price: 'R$44.99',
+      description: 'Um pacote tamanho festa com 12 brownies para qualquer celebração.',
+      features: ['12 Brownies à sua escolha', 'Melhor custo-benefício', 'Perfeito para eventos'],
     },
   ];
 
@@ -31,17 +31,17 @@ export default function PricingSection() {
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold font-headline tracking-tighter sm:text-4xl">
-              Choose Your Bliss Package
+              Escolha Seu Pacote de Felicidade
             </h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
-              We have the perfect package for every occasion and craving. Simple, transparent pricing.
+              Temos o pacote perfeito para cada ocasião e desejo. Preços simples e transparentes.
             </p>
           </div>
         </div>
         <div className="mx-auto grid max-w-5xl items-stretch gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {plans.map((plan) => (
             <Card key={plan.title} className={`flex flex-col ${plan.isPopular ? 'border-primary ring-2 ring-primary shadow-lg' : ''}`}>
-              {plan.isPopular && <div className="bg-primary text-primary-foreground text-sm font-semibold text-center py-1 rounded-t-lg">Most Popular</div>}
+              {plan.isPopular && <div className="bg-primary text-primary-foreground text-sm font-semibold text-center py-1 rounded-t-lg">Mais Popular</div>}
               <CardHeader>
                 <CardTitle className="font-headline">{plan.title}</CardTitle>
                 <CardDescription>{plan.description}</CardDescription>
@@ -58,7 +58,7 @@ export default function PricingSection() {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Button className="w-full" variant={plan.isPopular ? 'default' : 'secondary'}>Buy Now</Button>
+                <Button className="w-full" variant={plan.isPopular ? 'default' : 'secondary'}>Comprar Agora</Button>
               </CardFooter>
             </Card>
           ))}
