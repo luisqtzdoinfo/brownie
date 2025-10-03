@@ -8,7 +8,7 @@ export default function PricingSection() {
       title: 'Felicidade Solo',
       price: 'R$4.99',
       description: 'Um único e perfeito brownie para um mimo pessoal.',
-      features: ['1 Brownie Clássico Cremoso', 'Perfeito para uma pessoa'],
+      features: ['receita de bronwie estilo Nova York classico e saboroso', 'Perfeito para uma pessoa'],
     },
     {
       title: 'Caixa da Felicidade',
