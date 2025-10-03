@@ -5,7 +5,7 @@ import { Check } from 'lucide-react';
 export default function PricingSection() {
   const plans = [
     {
-      title: 'Felicidade Solo',
+      title: 'Pacote Brownie Iniciante',
       price: 'R$4.99',
       description: 'Um único e perfeito brownie para um mimo pessoal.',
       features: ['receita de bronwie estilo Nova York classico e saboroso', 'PDF com secretos para o brownie perfeito'],
