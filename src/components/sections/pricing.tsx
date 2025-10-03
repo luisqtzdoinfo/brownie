@@ -20,7 +20,7 @@ export default function PricingSection() {
     {
       title: 'Pacote de Eventos',
       price: 'R$44.99',
-      description: 'Um pacote tamanho festa com 12 brownies para qualquer celebração.',
+      description: 'Um pacote excelente para adoçar qualquer evento!',
       features: ['12 Brownies à sua escolha', 'Melhor custo-benefício', 'Perfeito para eventos'],
     },
   ];
