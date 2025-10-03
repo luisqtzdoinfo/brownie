@@ -116,7 +116,7 @@ export default function AiRecommender() {
                   )}
                 />
                 
-                <Button type="submit" disabled={isLoading}>
+                <Button type="submit" disabled={isLoading} className="animate-shimmer shadow-lg">
                   {isLoading ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Wand2 className="mr-2 h-4 w-4" />}
                   Encontrar Meu Brownie
                 </Button>
