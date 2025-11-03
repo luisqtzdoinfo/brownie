@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Check } from 'lucide-react';
+import Link from 'next/link';
 
 export default function PricingSection() {
   const plans = [
@@ -9,6 +10,9 @@ export default function PricingSection() {
       price: 'R$5.99',
       description: 'Feito para quem quer aprender e vender brownie.',
       features: ['receita de bronwie estilo Nova York classico e saboroso', 'PDF com segredos para o brownie perfeito'],
+      isPopular: false,
+      cta: 'Quero o meu agora!',
+      link: 'https://pay.cakto.com.br/7a4pjou_631916'
     },
     {
       title: 'Pacote de Eventos',
@@ -16,12 +20,17 @@ export default function PricingSection() {
       isPopular: true,
       description: 'Um pacote excelente para adoçar qualquer evento!',
       features: ['12 Brownies à sua escolha', 'Melhor custo-benefício', 'Perfeito para eventos'],
+      cta: 'Comprar Pacote',
+      link: '#'
     },
     {
       title: 'Caixa da Felicidade',
       price: 'R$24.99',
       description: 'Uma caixa com 6 brownies. Misture e combine seus favoritos!',
       features: ['6 Brownies da maneira que desejar', 'Ótimo para compartilhar', '10% de Desconto'],
+      isPopular: false,
+      cta: 'Comprar Caixa',
+      link: '#'
     },
   ];
 
@@ -58,7 +67,9 @@ export default function PricingSection() {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Button className="w-full" variant={plan.isPopular ? 'default' : 'secondary'}>Comprar Brownie</Button>
+                 <Button asChild className={`w-full ${plan.isPopular || plan.title === 'Pacote Brownie Iniciante' ? 'animate-shimmer shadow-lg shadow-primary/40' : ''}`} variant={plan.isPopular ? 'default' : 'secondary'}>
+                  <Link href={plan.link}>{plan.cta}</Link>
+                </Button>
               </CardFooter>
             </Card>
           ))}

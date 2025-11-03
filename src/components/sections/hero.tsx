@@ -28,7 +28,7 @@ export default function HeroSection() {
             Experimente os brownies mais ricos, cremosos e decadentes, feitos à mão com amor e os melhores ingredientes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" asChild>
+            <Button size="lg" asChild className="animate-shimmer shadow-lg shadow-primary/40">
               <Link href="https://pay.cakto.com.br/7a4pjou_631916">Quero o meu agora!</Link>
             </Button>
           </div>
