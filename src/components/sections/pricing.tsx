@@ -21,7 +21,7 @@ export default function PricingSection() {
       description: 'Um pacote excelente para adoçar qualquer evento!',
       features: ['12 Brownies à sua escolha', 'Melhor custo-benefício', 'Perfeito para eventos'],
       cta: 'Comprar Pacote',
-      link: '#'
+      link: 'https://pay.cakto.com.br/7a4pjou_631916'
     },
     {
       title: 'Caixa da Felicidade',
