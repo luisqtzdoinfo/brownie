@@ -37,7 +37,7 @@ export default function Header() {
           ))}
         </nav>
         <div className="flex flex-1 items-center justify-end space-x-4">
-          <Button asChild className="animate-shimmer shadow-lg shadow-primary/40">
+          <Button asChild>
             <Link href="https://pay.cakto.com.br/7a4pjou_631916">Quero o meu agora!</Link>
           </Button>
           <Sheet open={isSheetOpen} onOpenChange={setSheetOpen}>
