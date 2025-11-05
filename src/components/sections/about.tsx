@@ -17,7 +17,7 @@ export default function AboutSection() {
               Mais do que Apenas um Brownie
             </h2>
             <p className="text-muted-foreground md:text-lg/relaxed">
-              No Brownie Bliss Hub, acreditamos que um ótimo brownie pode tornar qualquer dia melhor. É por isso que colocamos nossos corações em cada fornada, usando apenas ingredientes premium para criar uma experiência de sabor inesquecível.
+              Na Academia do Brownie, acreditamos que um ótimo brownie pode tornar qualquer dia melhor. É por isso que colocamos nossos corações em cada fornada, usando apenas ingredientes premium para criar uma experiência de sabor inesquecível.
             </p>
             <ul className="grid gap-4">
               <li className="flex items-start gap-4">
