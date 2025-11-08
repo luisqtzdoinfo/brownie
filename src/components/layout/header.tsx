@@ -22,7 +22,7 @@ export default function Header() {
         <div className="mr-4 flex items-center">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <Sprout className="h-6 w-6 text-primary" />
-            <span className="font-bold font-headline text-lg">Academia do Brownie</span>
+            <span className="font-headline text-2xl font-bold tracking-wider text-primary">Academia do Brownie</span>
           </Link>
         </div>
         <nav className="hidden items-center space-x-6 text-sm font-medium md:flex">
@@ -50,7 +50,7 @@ export default function Header() {
             <SheetContent side="left">
               <Link href="/" className="mr-6 flex items-center space-x-2 mb-6">
                 <Sprout className="h-6 w-6 text-primary" />
-                <span className="font-bold font-headline">Academia do Brownie</span>
+                <span className="font-headline text-2xl font-bold tracking-wider text-primary">Academia do Brownie</span>
               </Link>
               <div className="flex flex-col space-y-4">
                 {navLinks.map((link) => (
