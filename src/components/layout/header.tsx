@@ -37,9 +37,8 @@ export default function Header() {
           ))}
         </nav>
         <div className="flex flex-1 items-center justify-end space-x-4">
-          <Button asChild className="relative overflow-hidden transition-transform duration-200 ease-in-out hover:scale-105 shadow-lg hover:shadow-primary/50">
+          <Button asChild className="transition-transform duration-200 ease-in-out hover:scale-105 shadow-lg hover:shadow-primary/50">
             <Link href="https://pay.cakto.com.br/7a4pjou_631916">
-              <span className="absolute inset-0 w-1/2 -translate-x-full animate-shine bg-gradient-to-r from-transparent via-white/30 to-transparent"></span>
               Quero o meu agora!
             </Link>
           </Button>
