@@ -43,7 +43,7 @@ export default function AboutSection() {
               </li>
             </ul>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center order-first md:order-last">
             {aboutImage && (
               <Image
                 src={aboutImage.imageUrl}

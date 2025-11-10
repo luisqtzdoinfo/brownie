@@ -17,7 +17,7 @@ export default function GallerySection() {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-4">
           {galleryImages.map((image) => (
             <div key={image.id} className="overflow-hidden rounded-lg shadow-lg aspect-square">
               <Image
