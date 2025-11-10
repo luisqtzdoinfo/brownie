@@ -6,21 +6,21 @@ import Link from 'next/link';
 export default function PricingSection() {
   const plans = [
     {
-      title: 'Pacote Brownie Iniciante',
-      price: 'R$5.99',
-      description: 'Feito para quem quer aprender e vender brownie.',
-      features: ['receita de bronwie estilo Nova York classico e saboroso', 'PDF com segredos para o brownie perfeito'],
-      isPopular: false,
-      cta: 'Quero o meu agora!',
-      link: 'https://pay.cakto.com.br/7a4pjou_631916'
-    },
-    {
       title: 'Pacote de Eventos',
       price: 'R$44.99',
       isPopular: true,
       description: 'Um pacote excelente para adoçar qualquer evento!',
       features: ['12 Brownies à sua escolha', 'Melhor custo-benefício', 'Perfeito para eventos'],
       cta: 'Comprar Pacote',
+      link: 'https://pay.cakto.com.br/7a4pjou_631916'
+    },
+    {
+      title: 'Pacote Brownie Iniciante',
+      price: 'R$5.99',
+      description: 'Feito para quem quer aprender e vender brownie.',
+      features: ['receita de bronwie estilo Nova York classico e saboroso', 'PDF com segredos para o brownie perfeito'],
+      isPopular: false,
+      cta: 'Quero o meu agora!',
       link: 'https://pay.cakto.com.br/7a4pjou_631916'
     },
     {
@@ -47,7 +47,7 @@ export default function PricingSection() {
             </p>
           </div>
         </div>
-        <div className="mx-auto grid max-w-5xl items-stretch gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto grid max-w-sm items-stretch gap-8 sm:max-w-4xl sm:grid-cols-2 lg:max-w-5xl lg:grid-cols-3">
           {plans.map((plan) => (
             <Card key={plan.title} className={`flex flex-col ${plan.isPopular ? 'border-primary ring-2 ring-primary shadow-lg' : ''}`}>
               {plan.isPopular && <div className="bg-primary text-primary-foreground text-sm font-semibold text-center py-1 rounded-t-lg">Mais Popular</div>}

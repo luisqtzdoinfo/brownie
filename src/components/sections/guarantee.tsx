@@ -23,7 +23,7 @@ export default function GuaranteeSection() {
   return (
     <section className="bg-secondary/50">
       <div className="container px-4 md:px-6">
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {guarantees.map((guarantee) => (
             <div key={guarantee.title} className="flex items-start gap-4">
               <div className="bg-primary/10 p-3 rounded-full">{guarantee.icon}</div>
